@@ -1,6 +1,7 @@
 import React from 'react'
 import BackgroundVideo from '../components/BackgroundVideo'
 import NavBlock from '../components/NavBlock'
+import AuthButton from '../components/AuthButton'
 
 const Home: React.FC = () => {
   const currentYear = new Date().getFullYear()
@@ -8,6 +9,11 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen">
       <BackgroundVideo />
+      
+      {/* Auth Button */}
+      <div className="absolute top-5 right-5 z-10">
+        <AuthButton />
+      </div>
       
       <div className="max-w-6xl mx-auto px-8 py-8 min-h-screen flex flex-col">
         <header className="text-center mb-12">
